@@ -325,3 +325,61 @@
 </body>
 
 </html>
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="./index.css">
+</head>
+<body>
+
+<h2>Tabs</h2>
+<p>Click on the buttons inside the tabbed menu:</p>
+
+<div class="tab">
+  <button class="tablinks" onclick="openMac(event, '13-inch')">13-inch</button>
+  <button class="tablinks" onclick="openMac(event, '14-inch')">14-inch</button>
+  <button class="tablinks" onclick="openMac(event, '16-inch')">16-inch</button>
+</div>
+
+<div id="13-inch" class="tabcontent">
+ 
+  <img src="./src/img/mbp-spacegray-select-202206.jpg" alt="">
+  <img src="./src/img/mbp-spacegray-select-202206.jpg" alt="">
+  
+
+</div>
+
+<div id="14-inch" class="tabcontent">
+  <img src="./src/img/mbp14-spacegray-select-202301.jpg" alt="">
+  <img src="./src/img/mbp14-spacegray-select-202301.jpg" alt="">
+  <img src="./src/img/mbp14-spacegray-select-202301.jpg" alt="">
+
+
+</div>
+
+<div id="16-inch" class="tabcontent">
+  <img src="./src/img/mbp14-spacegray-select-202301.jpg" alt="">
+  <img src="./src/img/mbp16-silver-select-202301.jpg" alt="">
+  <img src="./src/img/mbp14-spacegray-select-202301.jpg" alt="">
+
+</div>
+
+<script>
+function openMac(evt, macNa) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(macNa).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+   
+</body>
+</html> 
