@@ -133,6 +133,17 @@ allTabs.forEach((tab, index) => {
             tab3.style.display = 'none'
             tab3.style.display = 'block'
         }
+//         tabContainer.forEach(tabContent => {
+           
+
+//             if (tabContent.dataType == 1) {
+
+//                 console.log('tabContent',)
+//             }
+//         })
+//         console.log(tab)
+//         console.log('someindx', index)
+ //   }
     }
 })
 
