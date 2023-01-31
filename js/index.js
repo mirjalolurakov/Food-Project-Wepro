@@ -24,14 +24,14 @@ openBtnWhite.onclick = () => {
 
 closeBtnWhite.onclick = () => {
     modalWindow.style.display = 'none'
-    modalWindow.style.rotate = '360deg'
-    modalWindow.style.scale = '.2'
-    modalWindow.style.opacity = '0'
-    modalBg.style.opacity = '0'
+    modalBg.style.display = 'none'
 
     setTimeout(() => {
-        modalWindow.style.display = 'none'
-        modalBg.style.display = 'none'
+
+        modalWindow.style.rotate = '360deg'
+        modalWindow.style.scale = '.2'
+        modalWindow.style.opacity = '0'
+        modalBg.style.opacity = '0'
     }, 200)
 }
 
@@ -53,15 +53,16 @@ openBtnDark.onclick = () => {
 }
 
 closeBtnDark.onclick = () => {
+    // modalWindow.style.display = 'none'
+    modalBg.style.display = 'none'
     modalWindow.style.display = 'none'
-    modalWindow.style.rotate = '360deg'
-    modalWindow.style.scale = '.2'
-    modalWindow.style.opacity = '0'
-    modalBg.style.opacity = '0'
 
     setTimeout(() => {
-        // modalWindow.style.display = 'none'
-        modalBg.style.display = 'none'
+
+        modalWindow.style.rotate = '360deg'
+        modalWindow.style.scale = '.2'
+        modalWindow.style.opacity = '0'
+        modalBg.style.opacity = '0'
     }, 200)
 }
 
@@ -100,7 +101,6 @@ prev.onclick = () => {
     currentSlideNum.textContent = `0${lideIndex + 1}`
 
 }
-
 const allTabs = document.querySelectorAll('div[data-type]')
 const allTabContent = document.querySelectorAll('.tabcontent')
 const tabContainer = document.querySelectorAll('div[data-tab]')
@@ -133,23 +133,12 @@ allTabs.forEach((tab, index) => {
             tab3.style.display = 'none'
             tab3.style.display = 'block'
         }
-//         tabContainer.forEach(tabContent => {
-           
 
-//             if (tabContent.dataType == 1) {
-
-//                 console.log('tabContent',)
-//             }
-//         })
-//         console.log(tab)
-//         console.log('someindx', index)
- //   }
     }
 })
 
-// for (let tab of allTabs) {
-//     tab.addEventListener('click', function () {
-//         const content = document.querySelector('#' + tab.dataset.type)
-//         content.classList.remove('hide')
-//     })
-// }
+
+
+
+
+
